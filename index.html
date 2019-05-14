@@ -40,14 +40,9 @@
         border-radius: 3px;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
       }
-      html,
-      body {
-        height: 100%;
-      }
-      #main {
-        height: calc(100vh - var(--navbar-height));
+      .card-currency {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
       }
       .loading-spinner {
@@ -61,6 +56,12 @@
         border-right-color: transparent;
         border-radius: 50%;
       }
+      .loading-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - var(--navbar-height));
+      }
       @keyframes rotate-forever {
         0% {
           transform: rotate(0deg);
@@ -73,10 +74,18 @@
   </head>
   <body>
     <!-- app shell HTML -->
-    <nav id="navbar">Currencies</nav>
+    <nav id="navbar">Currencies (€)</nav>
 
     <main id="main">
-      <div class="loading-spinner"></div>
+      <div class="loading-container">
+        <div class="loading-spinner"></div>
+      </div>
     </main>
+
+    <script
+      defer
+      async
+      src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"
+    ></script>
   </body>
 </html>
