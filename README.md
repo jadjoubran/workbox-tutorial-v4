@@ -1,4 +1,4 @@
-# workbox Tutorial V4
+# Workbox v4 Tutorial
 
 Setup instructions
 
@@ -10,3 +10,7 @@ npm run dev
 ```
 
 Then navigate to [http://localhost:8080/](http://localhost:8080/) in your browser.
+
+## Solution
+
+Solution is available in the `solution` folder.
