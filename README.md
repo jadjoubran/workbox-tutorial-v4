@@ -1,5 +1,7 @@
 # Workbox v4 Tutorial
 
+Full article on smashing magazine: [Build A PWA with Webpack and Workbox](https://www.smashingmagazine.com/2019/06/pwa-webpack-workbox/)
+
 Setup instructions
 
 ```bash
